@@ -1,0 +1,57 @@
+{
+  "manifest_version": 2,
+  "name": "Cyberlibris Export Helper",
+  "version": "1.0",
+  "description": "Automatise l’export du viewer Cyberlibris.",
+  "default_locale": "en",
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "downloads",
+
+    "webRequest",
+    "webRequestBlocking",
+
+    "https://univ-scholarvox-com.gorgone.univ-toulouse.fr/*",
+    "https://univ-scholarvox-com.bnf.idm.oclc.org/*",
+    "https://univ-scholarvox-com.ressources.univ-poitiers.fr/*",
+    "https://*.scholarvox.com/*",
+    "https://*.cyberlibris.com/*",
+    "https://static2-cyberlibris-com.gorgone.univ-toulouse.fr/*",
+    "https://readerlb-cyberlibris-com.gorgone.univ-toulouse.fr/*"
+  ],
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_popup": "popup/index.html"
+  },
+
+  "background": {
+    "scripts": ["jszip.js", "export.js", "history.js", "metadata.js", "background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://univ-scholarvox-com.gorgone.univ-toulouse.fr/*",
+    "https://univ-scholarvox-com.bnf.idm.oclc.org/*",
+    "https://univ-scholarvox-com.ressources.univ-poitiers.fr/*",
+    "https://readerlb-cyberlibris-com.gorgone.univ-toulouse.fr/*",
+    "https://*.scholarvox.com/*",
+    "https://*.cyberlibris.com/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

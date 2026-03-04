@@ -1,0 +1,16 @@
+{
+  "name": "cyberlibris-extension",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": " rm -rf build &&  mkdir -p build",
+    "build:popup": "cd popup && npm install && npm run build",
+    "copy:core": " cp -r _locales icons manifest.json background.js export.js history.js metadata.js content_script.js build/",
+    "copy:libs": " cp node_modules/jszip/dist/jszip.min.js build/jszip.js &&  mkdir -p build/popup/src &&  cp node_modules/@alpinejs/csp/dist/cdn.min.js build/popup/src/alpine.js",
+    "copy:popup": " mkdir -p build/popup && cp popup/src/popup.js build/popup/src/popup.js &&  cp -r popup/dist/* build/popup/",
+    "build": "npm run clean && npm run build:popup && npm run copy:core && npm run copy:libs && npm run copy:popup"
+  },
+  "dependencies": {
+    "@alpinejs/csp": "^3.x.x",
+    "jszip": "^3.10.1"
+  }
+}

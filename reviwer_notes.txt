@@ -1,0 +1,12 @@
+This extension automates the export of the ScholarVox/Cyberlibris online book viewer.
+It only runs on a small and clearly defined set of domains directly related to the service,
+including a few institutional proxy domains required for universities to access the viewer.
+
+No personal data is collected, stored, or transmitted.
+All processing happens locally in the user's browser.
+No network requests are modified, blocked, or redirected.
+
+The extension does not bypass authentication and only works after the user has legitimately logged in.
+Host permissions are limited to the minimum required for content script injection.
+
+A full technical audit and detailed permission justification are available in docs/audit.md.
