@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Cyberlibris Export Helper",
   "version": "1.0",
-  "description": "Automatise l’export du viewer Cyberlibris.",
+  "description": "Allow to export documents from a scholarVox website..",
   "default_locale": "en",
 
   "permissions": [
@@ -28,6 +28,17 @@
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
+  },
+    "browser_specific_settings": {
+    "gecko": {
+      "id": "scholarvoxdownloader@academictoolkit",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
   },
 
   "browser_action": {
