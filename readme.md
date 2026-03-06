@@ -8,7 +8,8 @@
 
 ## Overview
 This browser extension is designed for users with access to a ScholarVox Univ instance, a platform for French students and academics. The extension allows you to save documents for offline use, overcoming the limitations of the native viewer, which does not support direct HTML downloads or PDF printing without daily quotas. With this extension, you can easily export books for personal use.
-
+## Building from source
+Simply run `npm install` and then `npm run build`. It will create a `build` folder when you can find the extension.
 ## Features
 - **From the Viewer:**
   - Download books as PDF, HTML, or both
