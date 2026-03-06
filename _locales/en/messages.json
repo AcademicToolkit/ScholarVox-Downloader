@@ -58,6 +58,7 @@
   "step_init_desc": { "message": "Starting the capture cycle." },
   "step_print_label": { "message": "Printing" },
   "step_print_desc": { "message": "Generating PDF via print service." },
-  "unknown_author": { "message": "Unknown author" }
+  "unknown_author": { "message": "Unknown author" },
+  "infos" : {"message" : "More info about this extension on Github."}
 
 }

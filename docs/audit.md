@@ -1,8 +1,5 @@
-# Cyberlibris Export Helper — Technical Audit for Mozilla Reviewers
 
-This document provides a complete and transparent overview of the extension’s architecture, permissions, security model, and operational scope. It is intended to assist Mozilla reviewers in understanding why each permission is required and how the extension behaves.
-
-
+This document provides a complete and transparent overview of the extension’s architecture, permissions, security model, and operational scope.
 
 ## 1. Purpose of the Extension
 

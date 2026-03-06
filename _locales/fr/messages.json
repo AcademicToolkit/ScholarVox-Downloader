@@ -58,5 +58,6 @@
   "step_init_desc": { "message": "Démarrage du cycle de capture." },
   "step_print_label": { "message": "Impression" },
   "step_print_desc": { "message": "Génération du PDF via le service d'impression." },
-  "unknown_author": { "message": "Auteur inconnu" }
+  "unknown_author": { "message": "Auteur inconnu" },
+    "infos" : {"message" : "Plus d'infos sur la page Github."}
 }

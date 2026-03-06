@@ -181,7 +181,7 @@ const QueueManager = {
   async enqueue(url) {
     if(this.MAX_CONCURRENT == 0){
      const settings = (await browser.storage.local.get('settings')).settings;
-     const max = settings.maxQueue || 2;
+     const max = settings?.maxQueue || 2;
      this.MAX_CONCURRENT = max;
     }
     this.queue.push(url);
